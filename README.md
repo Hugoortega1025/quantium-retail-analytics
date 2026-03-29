@@ -75,7 +75,7 @@ the datasets from the Quantium Data Analytics simulation on Forage
 and place them in the same directory as the notebooks.
 
 ## Notebooks
-- `Quantium_Task1_Customer_Segment_Analysis.ipynb` — EDA, cleaning, 
+- `Quantium_Customer_Segment_Analysis.ipynb` — EDA, cleaning, 
   feature engineering, and segment analysis
-- `Quantium_Task2_Store_Trial_Assessment.ipynb` — Control store 
+- `Quantium_Store_Trial_Assessment.ipynb` — Control store 
   selection and trial impact assessment
