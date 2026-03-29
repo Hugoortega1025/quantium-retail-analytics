@@ -29,14 +29,14 @@ This project was completed as part of the Quantium Data Analytics job simulation
 
 ## Visualizations
 
-### Total Chip Sales by Customer Segment
-![Segment Sales](segment_sales.png)
+All visualizations are embedded in the notebooks
 
-### Brand Preference — Mainstream Young Singles/Couples
-![Brand Affinity](brand_affinity.png)
-
-### Store Trial Assessment with 95% Confidence Intervals
-![Trial Assessment](trial_assessment.png)
+Key charts include:
+- Total chip sales by customer segment
+- Average bags per customer by segment  
+- Brand preference analysis for Mainstream Young Singles/Couples
+- Pack size preference analysis
+- Store trial assessment with 95% confidence intervals
 
 ## Methodology
 
