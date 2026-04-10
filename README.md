@@ -13,7 +13,7 @@ The retailer's category management team needed solutions to two tasks:
 
 - **Task 1:** Business lacked a clear understanding of chip purchasing behavior across customer segments to identify what factors drives chip revenue - making business strategy decisions unclear
 
-- **Task 2:** Evaluate the impact of a new store layout deployed in 3 stores. Without a control group comparison, the business couldn't determine whether any sales were driven by the new layout or by external factors otuside their control.
+- **Task 2:** Evaluate the impact of a new store layout deployed in 3 stores. Without a control group comparison, the business couldn't determine whether any sales were driven by the new layout or by external factors outside their control.
 
 - **Aim:** Use analysis is to identify high-value customer segments and provide a statistically evaluation of the store trial to support data-driven category and retail strategy decisions across all stores.
 
@@ -29,17 +29,19 @@ The retailer's category management team needed solutions to two tasks:
 ### Key Findings
 - **Budget Older Families** and **Mainstream Young Singles/Couples** are the highest revenue-driving segments — over-indexing on chip purchases relative to their population share
 ![Segment Sales](segment_sales.png)
-- Normalizing by customer count revealed spend per customer is actually consistent across top segments ($32-$35) -total revenue differences is driven by customer traffic, not spend per individual
+- Normalizing by customer count revealed spend per customer is actually consistent across top segments ($32-$35) -total revenue differences is driven by customer traffic, not individual spend
 - **2 of 3 trial stores** showed statistically significant sales uplift at 95% confidence during the trial period
 ![Trial Assessment](trial_assessment.png)
-- **Trial Store 3** showed an early uplift but couldn't hold - no negative impact, suggesting layout had no harm
+- Deeper analysis revealed **Store 77** uplift during trial period driven by new customer acquisition
+- Deeper analysis revealed **Store 88** uplift during trial period driven by both customer growth (13%) and increased per customer transactions (2% -> 11%) 
+- **Trial Store 86** showed an early uplift but couldn't hold - no negative impact, suggesting layout had no harm
 
 ### Recommendation
 **Stakeholder:** Category management and retail strategy teams
 
 Prioritize shelf space, promotional strategy, and new product ranging toward Budget Older Families and Mainstream Young Singles/Couples across all 270 stores. These segments drive the highest return on promotional investment on chip marketing.
 
-Deploy new store format to stores matching the profile of the two successful trial locations before broader rollout. Investigate Trial Store 3 independently — the lack of uplift may reflect local competition or changes in customer demographics.
+New store layout shows overall positive effect on chip sales and should be deployed to all stores, prioritizing stores matching the profile of Store 77 and Store 88. Investigate Trial Store 86 short lived impact — the lack of sustained uplift may reflect local competition.
 
 ## Skills & Tools
 | Category | Details |
@@ -48,6 +50,11 @@ Deploy new store format to stores matching the profile of the two successful tri
 | **Libraries** | Pandas, NumPy, SciPy, Matplotlib, Seaborn |
 | **Statistical Methods** | Pearson Correlation, 95% Confidence Interval Testing, Normalization |
 | **Concepts** | Quasi-experimental design, control store matching, customer segmentation, brand affinity analysis |  
+
+## Next Steps & Limitations
+- **Trial size:** Only 3 trial stores — a larger trial would provide more statistically robust conclusions before full rollout
+- **Store 86:** Short-lived effect warrants further investigation — layout may need additional in-store activation or promotional support to sustain uplift
+- **Causal inference:** Confidence interval testing confirms uplift but cannot fully isolate the trial effect from external factors — a difference-in-differences model would strengthen causal claims
 
 
 ## Notebooks
