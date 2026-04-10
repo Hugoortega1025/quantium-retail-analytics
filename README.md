@@ -8,7 +8,7 @@ Two of three trial stores showed statistically significant sales uplift at 95% c
 
 **Note:** This analysis was completed as part of the Quantium Data Analytics job simulation on Forage
 
-## Business Probelm
+## Business Problem
 The retailer's category management team needed solutions to two tasks:
 
 - **Task 1:** Business lacked a clear understanding of chip purchasing behavior across customer segments to identify what factors drives chip revenue - making business strategy decisions unclear
@@ -28,8 +28,10 @@ The retailer's category management team needed solutions to two tasks:
 
 ### Key Findings
 - **Budget Older Families** and **Mainstream Young Singles/Couples** are the highest revenue-driving segments — over-indexing on chip purchases relative to their population share
+![Segment Sales](segment_sales.png)
 - Normalizing by customer count revealed spend per customer is actually consistent across top segments ($32-$35) -total revenue differences is driven by customer traffic, not spend per individual
 - **2 of 3 trial stores** showed statistically significant sales uplift at 95% confidence during the trial period
+![Trial Assessment](trial_assessment.png)
 - **Trial Store 3** showed an early uplift but couldn't hold - no negative impact, suggesting layout had no harm
 
 ### Recommendation
@@ -37,7 +39,7 @@ The retailer's category management team needed solutions to two tasks:
 
 Prioritize shelf space, promotional strategy, and new product ranging toward Budget Older Families and Mainstream Young Singles/Couples across all 270 stores. These segments drive the highest return on promotional investment on chip marketing.
 
-Deploy new store format to stores matching the profile of the two successful trial locations before broader rollout. Investigate Trial Store 3 independently — the lack of uplift may reflect local competition or change is customer demographics.
+Deploy new store format to stores matching the profile of the two successful trial locations before broader rollout. Investigate Trial Store 3 independently — the lack of uplift may reflect local competition or changes in customer demographics.
 
 ## Skills & Tools
 | Category | Details |
@@ -46,20 +48,6 @@ Deploy new store format to stores matching the profile of the two successful tri
 | **Libraries** | Pandas, NumPy, SciPy, Matplotlib, Seaborn |
 | **Statistical Methods** | Pearson Correlation, 95% Confidence Interval Testing, Normalization |
 | **Concepts** | Quasi-experimental design, control store matching, customer segmentation, brand affinity analysis |  
-
-
-
-## Visualizations
-
-All visualizations are embedded in the notebooks
-
-Key charts include:
-- Total chip sales by customer segment
-- Average bags per customer by segment  
-- Brand preference analysis for Mainstream Young Singles/Couples
-- Pack size preference analysis
-- Store trial assessment with 95% confidence intervals
-
 
 
 ## Notebooks
