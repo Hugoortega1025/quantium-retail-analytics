@@ -1,31 +1,53 @@
-# Quantium Retail Analytics
+# Quantium Retail Analytics & Store Trial Evaluation
+### Retail Analytics | Customer Segmentation | Statistical Testing | A/B Testing 
 
-End-to-end retail analytics project analyzing chip purchasing behavior and store trial performance for a supermarket client. Built in Python using pandas, seaborn, matplotlib, and scipy.
+## Executive Summary
+A major retailer sought to understand which customer segments drive chip category revenue and whether a new store format trial produced a meaningful sales uplift. Analyzing 264,836 transactions across 270 stores, this analysis identifies the top revenue-driving customer segments and evaluates trial store performance using quasi-experimental methods. 
 
-## Project Overview
+Two of three trial stores showed statistically significant sales uplift at 95% confidence. Budget Older Families and Mainstream Young Singles/Couples were identified as the highest value segments — informing targeted promotional and shelf strategy.
 
-This project was completed as part of the Quantium Data Analytics job simulation on Forage. The work is split into two tasks:
+**Note:** This analysis was completed as part of the Quantium Data Analytics job simulation on Forage
 
-- **Task 1:** Understand chip purchasing behavior across customer 
-  segments to identify who buys chips and what drives their spend
-- **Task 2:** Evaluate the impact of a new store layout trialled in 
-  3 stores using quasi-experimental analysis
+## Business Probelm
+The retailer's category management team needed solutions to two tasks:
 
-## Key Findings
+- **Task 1:** Business lacked a clear understanding of chip purchasing behavior across customer segments to identify what factors drives chip revenue - making business strategy decisions unclear
 
-**Customer Segments**
-- Budget Older Families are the highest spending segment at $157k total sales, driven by volume — they buy 9+ bags per customer per year
-- Mainstream Young Singles/Couples represent the strongest growth opportunity, over-indexing on flavored brands (Tyrrells, Twisties, 
-  Doritos) and preferring either large sharing packs or small single-serve sizes
-- Normalizing by customer count shows spend per customer is actually similar across top segments ($32-$35), meaning volume of customers not spend per head — drives total revenue differences
+- **Task 2:** Evaluate the impact of a new store layout deployed in 3 stores. Without a control group comparison, the business couldn't determine whether any sales were driven by the new layout or by external factors otuside their control.
 
-**Store Trial**
-- The new store layout drove statistically significant chip sales 
-  uplift in 2 of 3 trial stores (77 and 88)
-- Primary driver was increased customer traffic rather than existing 
-  customers buying more
-- Store 86 showed mixed results — significant in 1 of 3 trial months
-- Recommendation: introduce the new layout to all stores
+- **Aim:** Use analysis is to identify high-value customer segments and provide a statistically evaluation of the store trial to support data-driven category and retail strategy decisions across all stores.
+
+
+## Methodology
+1. Data Cleaning and Preprocessing of ~ 265,000 chip transactions across 270 stores.
+2. Customer Segmentation - Normalized purchase volume and spend to identify which segments over-index on chip purchases.
+3. Control Store Selection - Each trial store was paired with the most similar non-trial store using Pearson Correlation on pre-trial data - verifying sales behavior difference during trial is credited to new store layout.
+4. Trial Evaluation using 95% Confidence interval testing to compare trial vs control store performance across trial period.
+
+## Results & Business Recommendation
+
+### Key Findings
+- **Budget Older Families** and **Mainstream Young Singles/Couples** are the highest revenue-driving segments — over-indexing on chip purchases relative to their population share
+- Normalizing by customer count revealed spend per customer is actually consistent across top segments ($32-$35) -total revenue differences is driven by customer traffic, not spend per individual
+- **2 of 3 trial stores** showed statistically significant sales uplift at 95% confidence during the trial period
+- **Trial Store 3** showed an early uplift but couldn't hold - no negative impact, suggesting layout had no harm
+
+### Recommendation
+**Stakeholder:** Category management and retail strategy teams
+
+Prioritize shelf space, promotional strategy, and new product ranging toward Budget Older Families and Mainstream Young Singles/Couples across all 270 stores. These segments drive the highest return on promotional investment on chip marketing.
+
+Deploy new store format to stores matching the profile of the two successful trial locations before broader rollout. Investigate Trial Store 3 independently — the lack of uplift may reflect local competition or change is customer demographics.
+
+## Skills & Tools
+| Category | Details |
+|----------|---------|
+| **Language** | Python |
+| **Libraries** | Pandas, NumPy, SciPy, Matplotlib, Seaborn |
+| **Statistical Methods** | Pearson Correlation, 95% Confidence Interval Testing, Normalization |
+| **Concepts** | Quasi-experimental design, control store matching, customer segmentation, brand affinity analysis |  
+
+
 
 ## Visualizations
 
@@ -38,41 +60,7 @@ Key charts include:
 - Pack size preference analysis
 - Store trial assessment with 95% confidence intervals
 
-## Methodology
 
-**Task 1 — Customer Segment Analysis**
-- Cleaned 264,836 transaction records — removed test accounts, 
-  non-chip products, and standardized brand names
-- Engineered pack size and brand features from product name strings
-- Merged transaction data with customer segment data on loyalty 
-  card number
-- Analyzed total sales, customers per segment, average spend per 
-  customer, units per customer, and brand/pack size preferences
-
-**Task 2 — Store Trial Assessment**
-- Built monthly metrics per store (sales, customers, transactions)
-- Selected control stores using Pearson correlation on pre-trial 
-  sales patterns, filtered by size similarity
-- Scaled control store sales to trial store baseline to remove 
-  pre-existing size differences
-- Built 95% confidence intervals from pre-trial variance to test 
-  statistical significance
-- Analyzed drivers of sales changes (customer count vs transactions 
-  per customer)
-
-## Tools & Skills
-- Python (pandas, numpy, matplotlib, seaborn, scipy)
-- Data cleaning and outlier detection
-- Feature engineering
-- Customer segmentation analysis
-- Quasi-experimental design (difference-in-differences)
-- Statistical significance testing
-
-## Data
-Data provided by Quantium via Forage job simulation. Raw data files 
-are not included in this repository. To run the notebooks, download 
-the datasets from the Quantium Data Analytics simulation on Forage 
-and place them in the same directory as the notebooks.
 
 ## Notebooks
 - `Quantium_Customer_Segment_Analysis.ipynb` — EDA, cleaning, 
