@@ -6,6 +6,8 @@ A major retailer sought to understand which customer segments drive chip categor
 
 Two of three trial stores showed statistically significant sales uplift at 95% confidence. Budget Older Families and Mainstream Young Singles/Couples were identified as the highest value segments — informing targeted promotional and shelf strategy.
 
+[→ View Deliverable](https://github.com/Hugoortega1025/quantium-retail-analytics/blob/main/Quantium_Retail_Analytics_Deliverable.pdf)
+
 **Note:** This analysis was completed as part of the Quantium Data Analytics job simulation on Forage
 
 ## Business Problem
