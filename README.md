@@ -12,7 +12,7 @@ A major chip retailer needed answers to two connected questions: **which custome
 
 ![Revenue Impact](images/revenue_impact.png)
 
-[→ View Full Deliverable](https://github.com/Hugoortega1025/quantium-retail-analytics/blob/main/Quantium_Retail_Analytics_Deliverable.pdf)
+[→ View Full Deliverable](https://github.com/Hugoortega1025/quantium-retail-analytics/blob/main/report/AB_Test_Consulting_Deliverable.pdf)
 
 ## Business Problem
 The retailer's category management team needed answers to two connected questions:
