@@ -1,5 +1,5 @@
-# Quantium Retail Analytics & Store Trial Evaluation
-### Customer Segmentation | A/B Testing & Quasi-Experimental Design | Statistical Inference
+<h1 align="center">Quantium Retail Analytics & Store Trial Evaluation</h1>
+<h3 align="center">Customer Segmentation | A/B Testing & Quasi-Experimental Design | Statistical Inference</h3>
 
 ## Executive Summary
 A major chip retailer needed answers to two connected questions: **which customers actually drive chip category revenue**, and **does a new store layout trial justify a network-wide rollout**. Analyzing 264,836 transactions across 270 stores and 21 customer segments, this project identifies the two highest-value customer segments and rigorously tests the layout trial using a matched-control (quasi-experimental) design — the standard approach for retail experiments where random assignment isn't possible.
@@ -67,19 +67,11 @@ The layout trial's proven mechanism — more foot traffic, not bigger baskets �
 - **Store 86:** Short-lived effect warrants further investigation — the layout may need additional in-store activation or promotional support to sustain uplift.
 - **Causal inference:** Confidence interval testing confirms uplift but can't fully isolate the trial effect from external factors specific to one control store — a difference-in-differences model, or a larger randomized trial, would strengthen causal claims further.
 
-## Repository Structure
-```
-data/raw/          Original source files (transactions, customer segments)
-data/processed/    Cleaned, merged dataset used by the trial notebook
-images/            Current chart exports referenced in this README
-archive/           Superseded chart/report versions, kept for reference
-```
 
 ## Notebooks
-- `Quantium_Customer_Segment_Analysis.ipynb` — EDA, cleaning, feature engineering, and segment analysis (Task 1)
-- `Quantium_Store_Trial_Assessment.ipynb` — Control store selection and trial impact assessment / quasi-experimental test (Task 2)
+- `Quantium_Customer_Segment_Analysis.ipynb` — EDA, cleaning, feature engineering, and segment analysis 
+- `Quantium_Store_Trial_Assessment.ipynb` — Control store selection and trial impact assessment / quasi-experimental test 
 
 ## Data Source
-Data and task brief provided by Quantium's Retail Strategy and Analytics virtual experience program on Forage.
-- Program: [ADD LINK]
-- Dataset: [ADD LINK]
+Data and Business Challenge provided by Quantium's Retail Strategy and Analytics virtual experience program on Forage.
+- Program: https://www.theforage.com/simulations/quantium/data-analytics-rqkb
